@@ -26,7 +26,7 @@ jobs:
       run: |
         python --version
     - name: Run unittest
-      run: python -m unittest test_app
+      run: python -m unittest discover
     - name: Run flake8
       run: |
         flake8 .

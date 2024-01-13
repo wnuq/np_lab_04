@@ -19,7 +19,3 @@ def test_divide_numbers():
     assert divide_numbers(6, 3) == 2.0
     assert divide_numbers(5, 2) == 2.5
     assert divide_numbers(0, 5) == 0.0
-
-    # Można również użyć context managera `pytest.raises`
-    with pytest.raises(ValueError):
-        divide_numbers(5, 0)

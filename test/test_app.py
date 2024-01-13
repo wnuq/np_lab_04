@@ -2,7 +2,7 @@ import unittest
 from app import add_numbers, subtract_numbers, multiply_numbers,
 divide_numbers
 class TestMathFunctions(unittest.TestCase):
-    def test_add_numbers(self):
+    def testAddNumbers(self):
         self.assertEqual(add_numbers(5, 3), 8)
         self.assertEqual(add_numbers(-1, 1), 0)
         self.assertEqual(add_numbers(0, 0), 0)

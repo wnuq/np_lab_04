@@ -3,7 +3,8 @@ name: Check Syntax
 on:
   push:
     branches:
-      - unittest
+      - main
+      - check_syntax
 
 jobs:
   unit-testing:

@@ -30,4 +30,4 @@ jobs:
         flake8 .
     - name: Run unittest
       run: |
-        python -m unittest discover
+        run : pytest test/test_app.py

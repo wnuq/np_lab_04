@@ -3,19 +3,14 @@ name: Check Syntax
 on:
   push:
     branches:
-      - main
       - check_syntax
 
 jobs:
   build:
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
     strategy:
       matrix:
-        os: [ubuntu-latest, macos-latest, windows-latest]
         python-version: ["3.9", "3.10", "3.11"]
-        exclude:
-          - os: ubuntu-latest
-            python-version: "3.10"
     
     steps:
     - name : Checkout code

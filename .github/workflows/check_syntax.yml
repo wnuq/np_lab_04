@@ -7,8 +7,14 @@ on:
       - check_syntax
 
 jobs:
-  unit-testing:
+  build:
     runs-on: ubuntu-latest 
+    strategy:
+      matrix:
+        python-version: ["3.9", "3.10", "3.11"]
+        exclude:
+          - os: ubuntu-latest
+            python-version: "3.10"
     
     steps:
     - name : Checkout code

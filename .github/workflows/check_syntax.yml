@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - check_syntax
 
 jobs:
   check_syntax:
